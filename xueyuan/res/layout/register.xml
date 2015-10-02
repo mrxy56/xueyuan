@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/screen"
+    android:orientation="vertical" >
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36.0dip"
+        android:background="#0000ff">
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/login_label_register"
+            android:textColor="#000000"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+</RelativeLayout>
+        
+       
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:text="@string/register_username"
+                    android:textColor="#000000"
+                    android:textSize="16.0dip" />
+
+                <EditText
+                    android:id="@+id/user_name_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:imeOptions="actionNext"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textSize="16.0dip" />
+          
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:text="@string/register_password"
+                    android:textColor="#000000"
+                    android:textSize="16.0dip" />
+
+                <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textSize="16.0dip" />
+
+          
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:text="@string/register_password2"
+                    android:textColor="#000000"
+                    android:textSize="16.0dip" />
+
+                <EditText
+                    android:id="@+id/confirm_password_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textSize="16.0dip" />
+
+         
+            <TextView
+                android:id="@+id/confirm_password_error"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68.0dip"
+                android:text="@string/confirm"
+                android:textColor="#000000"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+
+            
+           <Button
+                android:id="@+id/register_button"
+                android:layout_width="200.0dip"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dip"
+                android:text="@string/register"
+                android:textSize="16.0dip" />
+     
+
+</LinearLayout>
